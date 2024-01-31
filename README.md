@@ -11,7 +11,7 @@ Flutter 实现命中拦截, 用于解决手势冲突, 阻止其它小部件获�
 
 ## 安装
 
-安装最新版本. [![pub package](https://img.shields.io/pub/v/flutter_gesture_hit_intercept.svg)](https://pub.dev/packages/flutter_gesture_hit_intercept/install).
+安装最新版本[![pub package](https://img.shields.io/pub/v/flutter_gesture_hit_intercept.svg)](https://pub.dev/packages/flutter_gesture_hit_intercept/install)
 
 ## 快速开始
 
