@@ -103,10 +103,6 @@ class GestureTestBox extends RenderBox {
     size = Size(constraints.maxWidth, constraints.maxWidth / 2);
   }
 
-  /// 如果为true, 会影响[PointerEvent.localPosition]位置信息
-  @override
-  bool get isRepaintBoundary => false;
-
   @override
   void paint(PaintingContext context, Offset offset) {
     //context.canvas.drawColor(Colors.redAccent, BlendMode.src);
