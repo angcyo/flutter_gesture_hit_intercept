@@ -144,11 +144,15 @@ class GestureTestBox extends RenderBox {
     //debugger();
     pointerMap.forEach((key, pointer) {
       paint.color = getPointerColor(key);
-      canvas.drawLine(Offset(offset.dx, pointer.localPosition.dy),
-          Offset(offset.dx + size.width, pointer.localPosition.dy), paint);
-      canvas.drawLine(Offset(pointer.localPosition.dx, offset.dy),
-          Offset(pointer.localPosition.dx, offset.dy + size.height), paint);
-      canvas.drawCircle(pointer.localPosition, radius, paint);
+      canvas.drawLine(
+          Offset(offset.dx, pointer.localPosition.dy + offset.dy),
+          Offset(offset.dx + size.width, pointer.localPosition.dy + offset.dy),
+          paint);
+      canvas.drawLine(
+          Offset(pointer.localPosition.dx + offset.dx, offset.dy + offset.dy),
+          Offset(pointer.localPosition.dx + offset.dx, offset.dy + size.height),
+          paint);
+      canvas.drawCircle(pointer.localPosition + offset, radius, paint);
     });
   }
 
