@@ -1,11 +1,17 @@
 name: flutter_gesture_hit_intercept
 description: "Flutter 实现命中拦截, 用于解决手势冲突, 阻止其它小部件获取手势事件"
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/angcyo/flutter_gesture_hit_intercept
 repository: https://github.com/angcyo/flutter_gesture_hit_intercept
 screenshots:
   - description: "flutter_gesture_hit_intercept screenshot"
     path: png/img.png
+
+topics:
+  - flutter
+  - gesture
+  - hit
+  - intercept
 
 environment:
   sdk: '>=3.2.5 <4.0.0'
